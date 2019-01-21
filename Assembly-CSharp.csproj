@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{8D30CB48-8C3B-F71D-430A-1268658CA845}</ProjectGuid>
+    <ProjectGuid>{2A481C86-3C88-8476-EC51-F01571D8E4CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,14 +61,15 @@
   <ItemGroup>
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerController.cs" />
     <Compile Include="Assets\LowPolyNature\Scripts\PlayerFollow.cs" />
-    <Compile Include="Assets\moveTerrain.cs" />
-    <Compile Include="Assets\Pause.cs" />
-    <Compile Include="Assets\UIManagerScript.cs" />
+    <Compile Include="Assets\Scripts\ColorLerper.cs" />
+    <Compile Include="Assets\Scripts\moveTerrain.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
+    <Compile Include="Assets\Scripts\UIManagerScript.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/userDocuments/trial/UnityProjects/BallBalance-master/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/userDocuments/trial/UnityProjects/Ball-Balance-EEG/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/userDocuments/trial/UnityProjects/BallBalance-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/userDocuments/trial/UnityProjects/Ball-Balance-EEG/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/UnityPro/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -274,6 +275,12 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/karthik/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
+    <Reference Include="Jayrock">
+      <HintPath>E:/userDocuments/trial/UnityProjects/Ball-Balance-EEG/Assets/Plugins/Jayrock/Jayrock.dll</HintPath>
+    </Reference>
+    <Reference Include="Jayrock.Json">
+      <HintPath>E:/userDocuments/trial/UnityProjects/Ball-Balance-EEG/Assets/Plugins/Jayrock/Jayrock.Json.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/Program Files/UnityPro/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
     </Reference>
@@ -301,6 +308,12 @@
     <Reference Include="Boo.Lang">
       <HintPath>D:/Program Files/UnityPro/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{A9B70290-09FC-82DC-70C9-7B345D3DB150}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
