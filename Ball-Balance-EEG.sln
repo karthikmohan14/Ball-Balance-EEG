@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ball-Balance-EEG", "Assembl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ball-Balance-EEG", "Assembly-CSharp-Editor-firstpass.csproj", "{1CB7B208-2F20-1255-371B-C36E547BEDBE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ball-Balance-EEG", "Assembly-CSharp-Editor.csproj", "{B54AA15F-457C-3E84-4ECF-AF5F0DE949BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{1CB7B208-2F20-1255-371B-C36E547BEDBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CB7B208-2F20-1255-371B-C36E547BEDBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CB7B208-2F20-1255-371B-C36E547BEDBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54AA15F-457C-3E84-4ECF-AF5F0DE949BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54AA15F-457C-3E84-4ECF-AF5F0DE949BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54AA15F-457C-3E84-4ECF-AF5F0DE949BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54AA15F-457C-3E84-4ECF-AF5F0DE949BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

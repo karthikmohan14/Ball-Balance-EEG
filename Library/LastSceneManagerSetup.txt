@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/lerp.unity
+- path: Assets/Scenes/ball.unity
   isLoaded: 1
   isActive: 1
