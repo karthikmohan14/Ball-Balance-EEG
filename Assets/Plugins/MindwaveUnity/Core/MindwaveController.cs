@@ -82,7 +82,7 @@ public class MindwaveController : MonoBehaviour
 		[Header("Debug settings")]
 
 		[SerializeField]
-		private bool m_ShowDataPackets = true;
+		public static bool m_ShowDataPackets = true;
 
 		[SerializeField]
 		private bool m_ShowStreamErrors = false;
@@ -91,10 +91,10 @@ public class MindwaveController : MonoBehaviour
 
 		private TcpClient m_TcpClient = null;
 		private Stream m_DataStream = null;
-		private byte[] m_Buffer = { };
+		public byte[] m_Buffer = { };
 
 		private Coroutine m_StreamRoutine = null;
-		private bool m_ConnectedFlag = false;
+		public static bool m_ConnectedFlag = false;
 		// This flag is here to check if the conection is timed out
 		private bool m_PendingConnection = false;
 
@@ -195,11 +195,12 @@ public class MindwaveController : MonoBehaviour
 			}
 		}
 
-		/// <summary>
-		/// Read datas from Mindwave, and parse them.
-		/// Also call the relative update events.
-		/// </summary>
-		/// <param name="_UpdateRate">Defines the interval between each stream read operation.</param>
+    /// <summary>
+    /// Read datas from Mindwave, and parse them.
+    /// Also call the relative update events.
+    /// </summary>
+    /// <param name="_UpdateRate">Defines the interval between each stream read operation.</param>
+    public static string wohoo;
 		private IEnumerator ParseData(float _UpdateRate)
 		{
 			if(m_DataStream.CanRead)
@@ -209,8 +210,10 @@ public class MindwaveController : MonoBehaviour
 
 				if(m_ShowDataPackets)
 				{
-					Debug.Log(Encoding.ASCII.GetString(m_Buffer, 0, streamBytes));
-				}
+					//Debug.Log(Encoding.ASCII.GetString(m_Buffer, 0, streamBytes));
+                wohoo = Encoding.ASCII.GetString(m_Buffer, 0, streamBytes);
+
+                }
 
 				foreach(string packet in packets)
 				{
